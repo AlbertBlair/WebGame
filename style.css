@@ -1,0 +1,131 @@
+/* header */
+
+body{
+   display:grid;
+   /* grid-template-rows:65px 600px 65px 60px; */
+   grid-template-rows: .4fr 5.5fr .5fr .5fr;
+   /* border-color: red;
+   border-style: dotted; */
+   max-height: 100%;
+}
+
+.header-container{
+    background-color: darkblue;
+    width: 100%;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.header-content{
+    display: flex;
+    color:snow;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.game-name{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    color: snow;
+    font-size: 24px;
+}
+
+.Pkm-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.Pkm-content{
+    display: flex;
+    align-items: center;
+    
+}
+.Pkm-photo{
+    height: 600px;
+    width: 700px;
+    border-radius: 16px;
+}
+
+.quiz-question{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+/* navigation */
+ul#navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 20px;
+}
+
+ul#navigation li a{
+    color: snow;
+    padding: 12px;
+
+}
+
+/* game choices */
+.choice-container{
+    background-color:darkblue;
+    width: 100%;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.choice-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-around;
+    list-style: none;
+
+}
+
+.choice-list li{
+    padding:12px;
+    background-color:aliceblue;
+    border-color:black;
+    border-radius: 16px;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+
+.choice-list .btn:hover, .choice-list .btn:active {
+    background: rgb(92, 164, 205);
+    color: #F1F1F1;
+    /* border: 2px solid #666666; */
+}
+
+.footer-container {
+    background: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.footer-content {
+    font-size: 15px;
+    color: #F1F1F1;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
